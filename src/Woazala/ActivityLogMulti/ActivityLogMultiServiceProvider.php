@@ -1,4 +1,4 @@
-<?php namespace Regulus\ActivityLog;
+<?php namespace Woazala\ActivityLogMulti;
 
 use Illuminate\Support\ServiceProvider;
 
