@@ -76,16 +76,16 @@ class Activity extends Eloquent {
 	public function getName()
 	{
 		if (!(bool) $this->developer) {
-			return Config::get('activity-log::developerName');
+			return Config::get('activity-log-multi::developerName');
 		} else {
 			$user = $this->user;
 			if (empty($user))
 				return "Unknown User";
 
-			if (Config::get('activity-log::usernameAsName')) {
+			if (Config::get('activity-log-multi::usernameAsName')) {
 				return $user->username;
 			} else {
-				if (Config::get('activity-log::fullNameLastNameFirst')) {
+				if (Config::get('activity-log-multi::fullNameLastNameFirst')) {
 					return $user->last_name.', '.$user->first_name;
 				} else {
 					return $user->first_name.' '.$user->last_name;

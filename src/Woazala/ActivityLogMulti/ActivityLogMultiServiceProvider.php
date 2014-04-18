@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class ActivityLogServiceProvider extends ServiceProvider {
+class ActivityLogMultiServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -18,7 +18,7 @@ class ActivityLogServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('regulus/activity-log');
+		$this->package('woazala/activity-log-multi');
 	}
 
 	/**

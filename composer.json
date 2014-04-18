@@ -1,11 +1,15 @@
 {
-    "name": "regulus/activity-log",
-    "description": "A clean and simple Laravel 4 activity logger for monitoring user activity on a website or web application.",
+    "name": "woazala/activity-log-multi",
+    "description": "A clean and simple Laravel 4 activity logger for monitoring user activity on a website or web application using multi tenacity.",
     "license": "MIT",
     "authors": [
         {
             "name": "Cody Jassman",
             "email": "me@codyjassman.com"
+        },
+        {
+            "name": "Madalin Zala",
+            "email": "madalin.zala@gmail.com"
         }
     ],
     "require": {
@@ -18,7 +22,7 @@
             "src/models"
         ],
         "psr-0": {
-            "Regulus\\ActivityLog": "src/"
+            "Woazala\\ActivityLogMulti": "src/"
         }
     },
     "minimum-stability": "dev"

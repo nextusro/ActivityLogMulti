@@ -4,6 +4,17 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
+	| Multi tenacity key and value
+	|--------------------------------------------------------------------------
+	|
+	| The name of the key for multi tenacity plus current value of client app
+	|
+	*/
+	'key' => 'app_id',
+	'value' => 1, // Should come from other config for current client app
+
+	/*
+	|--------------------------------------------------------------------------
 	| Developer Name
 	|--------------------------------------------------------------------------
 	|
