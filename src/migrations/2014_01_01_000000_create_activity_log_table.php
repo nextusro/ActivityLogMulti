@@ -28,7 +28,7 @@ class CreateActivityLogTable extends Migration {
             $table->timestamps();
         });
 
-        Schema::table('users', function($table)
+        Schema::table('activity_log', function($table)
         {
 
             // We'll need to ensure that MySQL uses the InnoDB engine to
