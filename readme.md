@@ -1,7 +1,7 @@
 ActivityLog
 ===========
 
-**A clean and simple Laravel 4 activity logger for monitoring user activity on a website or web application.**
+**A clean and simple Laravel 4 activity logger for monitoring user activity on a website or web application adapted for multi tenacity.**
 
 - [Installation](#installation)
 - [Basic Usage](#basic-usage)
@@ -11,33 +11,33 @@ ActivityLog
 
 **Basic installation, service provider registration, and aliasing:**
 
-To install ActivityLog, make sure "regulus/activity-log" has been added to Laravel 4's `composer.json` file.
+To install ActivityLog, make sure "woazala/activity-log-multi" has been added to Laravel 4's `composer.json` file.
 
 	"require": {
-		"regulus/activity-log": "dev-master"
+		"woazala/activity-log-multi": "dev-master"
 	},
 
 Then run `php composer.phar update` from the command line. Composer will install the ActivityLog package. Now, all you have to do is register the service provider, set up ActivityLog's alias in `app/config/app.php`, Add this to the `providers` array:
 
-	'Regulus\ActivityLog\ActivityLogServiceProvider',
+	'Woazala\ActivityLogMulti\ActivityLogMultiServiceProvider',
 
 And add this to the `aliases` array:
 
-	'Activity' => 'Regulus\ActivityLog\Activity',
+	'Activity' => 'Woazala\ActivityLogMulti\Activity',
 
 **Run the migrations and seed the database:**
 
 To run the database migrations (a single DB table), run the following from the command line:
 
-	php artisan migrate --package=regulus/activity-log
+	php artisan migrate --package=woazala/activity-log-multi
 
 **Publishing config file:**
 
 If you wish to customize the configuration of ActivityLog, you will need to publish the config file. Run this from the command line:
 
-	php artisan config:publish regulus/activity-log
+	php artisan config:publish woazala/activity-log-multi
 
-You will now be able to edit the config file in `app/config/packages/regulus/activity-log`.
+You will now be able to edit the config file in `app/config/packages/woazala/activity-log-multi`.
 
 <a name="basic-usage"></a>
 ## Basic Usage

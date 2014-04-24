@@ -1,4 +1,4 @@
-<?php namespace Regulus\ActivityLog;
+<?php namespace Woazala\ActivityLogMulti;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
@@ -39,8 +39,12 @@ class Activity extends Eloquent {
 
 		$user = Auth::user();
 
+		$appKey = Config::get('activity-log-multi::key');
+		$appValue = Config::get('activity-log-multi::value');
+
 		$activity = new static;
 		$activity->user_id      = isset($user->id) ? $user->id : 0;
+		$activity->$appKey      = isset($$appValue) ? $appValue : 0;
 		$activity->content_id   = isset($data['contentID'])   ? $data['contentID']   : 0;
 		$activity->content_type = isset($data['contentType']) ? $data['contentType'] : "";
 		$activity->action       = isset($data['action'])      ? $data['action']      : "";
