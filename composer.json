@@ -1,5 +1,5 @@
 {
-    "name": "woazala/activity-log-multi",
+    "name": "mvpasarel/activity-log-multi",
     "description": "A clean and simple Laravel 4 activity logger for monitoring user activity on a website or web application using multi tenacity.",
     "license": "MIT",
     "authors": [
@@ -8,8 +8,8 @@
             "email": "me@codyjassman.com"
         },
         {
-            "name": "Madalin Zala",
-            "email": "madalin.zala@gmail.com"
+            "name": "Madalin Pasarel",
+            "email": "madalin.pasarel@gmail.com"
         }
     ],
     "require": {
