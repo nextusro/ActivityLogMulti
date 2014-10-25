@@ -1,5 +1,5 @@
 {
-    "name": "mvpasarel/activity-log-multi",
+    "name": "nextusro/activity-log-multi",
     "description": "A clean and simple Laravel 4 activity logger for monitoring user activity on a website or web application using multi tenacity.",
     "license": "MIT",
     "authors": [
